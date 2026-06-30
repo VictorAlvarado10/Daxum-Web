@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-heading: "Montserrat", ui-sans-serif, system-ui, sans-serif;
+
+  --color-daxum-navy: #0A1A33;
+  --color-daxum-blue: #1464FF;
+  --color-daxum-light: #5BA0FF;
+  --color-daxum-ice: #E6F0FF;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-daxum-navy);
+  background-color: #ffffff;
+}
+
+h1, h2, h3, h4, h5, h6, .font-heading {
+  font-family: var(--font-heading);
+}
