@@ -64,10 +64,11 @@ const FadeIn = ({ children, delay = 0, className = "" }: { children: React.React
 
 const ContactCTA = () => (
   <a 
-    href="#contacto" 
+    href="https://wa.me/526672095329"
+    target="_blank" rel="noopener noreferrer"
     className="inline-flex items-center justify-center px-6 py-3 font-medium text-white transition-all rounded-lg bg-daxum-blue hover:bg-blue-700 hover:shadow-lg hover:-translate-y-0.5"
   >
-    Agenda un diagnóstico
+    Agendar diagnóstico
   </a>
 );
 
@@ -158,8 +159,8 @@ export default function App() {
                   {link.name}
                 </a>
               ))}
-              <a href="#contacto" className="px-5 py-2 text-sm font-medium text-white bg-daxum-blue rounded-lg hover:bg-blue-600 transition-colors">
-                Contáctanos
+              <a href="https://wa.me/526672095329" target="_blank" rel="noopener noreferrer" className="px-5 py-2 text-sm font-medium text-white bg-daxum-blue rounded-lg hover:bg-blue-600 transition-colors">
+                Agendar diagnóstico
               </a>
             </div>
             <div className="md:hidden">
@@ -191,8 +192,8 @@ export default function App() {
                   </a>
                 ))}
                 <div className="pt-4">
-                  <a href="#contacto" onClick={() => setIsMenuOpen(false)} className="block w-full text-center px-5 py-3 text-base font-medium text-white bg-daxum-blue rounded-lg hover:bg-blue-600">
-                    Agendar Llamada
+                  <a href="https://wa.me/526672095329" target="_blank" rel="noopener noreferrer" onClick={() => setIsMenuOpen(false)} className="block w-full text-center px-5 py-3 text-base font-medium text-white bg-daxum-blue rounded-lg hover:bg-blue-600">
+                    Agendar diagnóstico
                   </a>
                 </div>
               </div>
@@ -505,13 +506,14 @@ export default function App() {
                 <p className="text-gray-300 mb-8 text-lg sm:text-xl max-w-2xl mx-auto">
                   Agenda un diagnóstico de datos y detectamos qué procesos, reportes o indicadores pueden generar mayor impacto en tu operación.
                 </p>
-                <button 
-                  onClick={() => window.open('https://calendly.com/admindaxum/30min', '_blank')}
+                <a 
+                  href="https://wa.me/526672095329"
+                  target="_blank" rel="noopener noreferrer"
                   className="bg-daxum-blue hover:bg-blue-600 text-white font-semibold py-4 px-8 rounded-full transition-all duration-300 transform hover:scale-105 inline-flex items-center gap-3 shadow-[0_0_20px_rgba(33,118,255,0.3)] hover:shadow-[0_0_30px_rgba(33,118,255,0.5)]"
                 >
                   Agendar diagnóstico
                   <ArrowRight size={20} />
-                </button>
+                </a>
               </div>
             </div>
           </FadeIn>
@@ -804,7 +806,7 @@ export default function App() {
             
             <div className="flex flex-col sm:flex-row justify-center items-center gap-6">
               <a 
-                href="https://wa.me/526674084166" 
+                href="https://wa.me/526672095329" 
                 target="_blank" rel="noopener noreferrer"
                 className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white bg-daxum-blue rounded-xl shadow-lg shadow-daxum-blue/30 hover:bg-blue-600 hover:scale-105 transition-all"
               >
